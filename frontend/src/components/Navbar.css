@@ -1,0 +1,47 @@
+/*2. Estilizando*/
+#nav {
+  display: flex;
+  justify-content: space-between; /*A esquerda fica o nome do projeto, no centro o formulário de pesquisa e a direita os links */
+  align-items: center; /* Centraliza todos os itens*/
+  background-color: #000; /* Cor de fundo */
+  border-bottom: 1px solid #363636; /* joga a borda do topo para a busca*/
+  padding: 0.1em 1em; /* joga as bordas laterias na linha da busca*/
+}
+
+#search-form {
+  position: relative; /*mantém o ícone dentro e posição absoluta */
+  width: 20%; /* largura */
+}
+
+/*Icones da bibloteca do React*/
+#search-form svg {
+  position: absolute; /*Trabalha dentro da area de posição relativa no bloco anterior */
+  top: 10px; /* Centraliza o input do formulário */
+  left: 9px;
+}
+
+/*Pesquisar da novbar*/
+#search-form input {
+  padding-left: 2.5em; /*Afasta o texto o icone */
+  border: none; /* sem borda */
+  border-radius: 5px; /*Raio da borda, quebra os cantos */
+  width: 100%; /*Largura, será 100% dos 20% acima */
+  margin: 0; /*zera margem */
+}
+
+#nav-links {
+  display: flex;
+  align-items: center; /* Centraliza os links na vertica quando tiver os icones*/
+}
+
+#nav-links li {
+  margin-right: 1em; /*Afasta os links, espaçamento */
+}
+
+#nav-links span {
+  cursor: pointer; /* Ponteiro do mouse nos links*/
+}
+
+#nav-links svg {
+  font-size: 1.5em; /*Aumenta as fontes dos links */
+}

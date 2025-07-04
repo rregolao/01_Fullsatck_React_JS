@@ -1,0 +1,8 @@
+#footer {
+  background-color: #121212; 
+  height: 200px; /*Altura para encorpar*/
+  display: flex; 
+  justify-content: center; /*Todos conteúdos ao centro e horizontalmente*/
+  align-items: center; /*Alinha na vertical*/
+  border-top: 1px solid #363636; /*Dá um destaque entre as sessões*/
+}

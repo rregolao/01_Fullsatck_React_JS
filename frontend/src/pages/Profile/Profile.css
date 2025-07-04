@@ -1,0 +1,57 @@
+#profile {
+  width: 50%; /*Largura da foto*/
+  margin: 0 auto; /*E Centraliza a foto*/
+}
+
+.profile-header {
+  display: flex; /*Permite trabalhar com flex box*/
+  align-items: center;
+  flex-wrap: wrap; /*Quebra os itens alinhados ao centro em um detemrinado momento*/
+  padding: 1em; /*Espaçamento interno do conteuido*/
+  border-bottom: 1px solid #363636;
+}
+
+.profile-header img {
+  width: 100px;
+  height: 100px; /*abos deixam quadradp para arrendondar*/
+  border-radius: 50%; /*Finaliza arredondamento*/
+  margin-right: 2em; /*Afasta conteúdo do lado da foto*/
+}
+
+.new-photo {
+  padding: 1em;
+  border-bottom: 1px solid #363636;
+}
+
+.photos-container {
+  display: flex;
+  flex-wrap: wrap; /*quebra linha quando chega no limite da largura*/
+}
+
+.photo {
+  width: 32%; /*largura da foto*/
+  margin: 0.3%; /*margen para afastar uma da outra*/
+}
+
+.photo img {
+  width: 100%; /*box de foto, largura de cada imagem*/
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around; /*afasta uma das outras*/
+  padding: 10px; /*entre a foto e as actions*/
+}
+
+.actions svg {
+  cursor: pointer; /*aparece ponteiro do mouse*/
+}
+
+.edit-photo {
+  margin-bottom: 1em;
+}
+
+.edit-photo img {
+  width: 100%;
+  margin-bottom: 1em;
+}

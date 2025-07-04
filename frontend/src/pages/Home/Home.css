@@ -1,0 +1,20 @@
+#home {
+  width: 50%;
+  margin: 0 auto; /*Margem 0 auto centraliza os conteúdos*/
+  padding-top: 2em; /*Afasta os conteúdos da barra de navegação*/
+}
+
+#home .btn {
+  display: block;
+  max-width: 80px;
+  text-align: center;
+  margin: 0.5em 0 2em 0; /*Afatas maior a foto de baixo para espaçamento*/
+}
+
+.no-photos {
+  text-align: center;
+}
+
+.no-photos a {
+  color: #0094f6;
+}

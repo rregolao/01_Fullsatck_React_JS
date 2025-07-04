@@ -1,0 +1,94 @@
+/*4. Estilização*/
+body {
+    font-family: "Roboto", "sans-serif"; /*Quando não tiver roboto, será sans serif */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Imepde os inputs de passar o limite estabelecido*/
+    background-color: #121212;
+    color: #FAFAFA; /* cor de texto*/
+}
+
+a {
+  color: #fafafa; /*todos os links terão essa cor*/
+  text-decoration: none; /*tira o underline dos links*/
+}
+
+/*Classe ativa de quando cliar no link*/
+.active {
+  font-weight: bold; /*negrito*/
+}
+
+ul {
+  list-style: none; /*tirar o nome da lista*/
+}
+
+form {
+  display: flex;
+  flex-direction: column; /*inputs um abaixo do outro*/
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label span {
+  font-weight: bold;
+  margin-bottom: 0.5em; /*afasta do input*/
+  color: #aaa;
+  font-size: 0.7em; 
+}
+
+input {
+  background-color: #3b3b3b;
+  color: #aaa;
+  border: 1px solid #555; 
+  border-radius: 2px; /*Raio da borda pequeno para quebrar o conto*/
+  padding: 10px 8px; /*Espaça o conteúdo das bordas*/
+  outline: none; /*Para não exbir a borda azul do chorme*/
+  margin-bottom: 0.6em; /*Afasta dos demais inputs*/
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/*classe de botoes*/
+.btn,
+button,
+input[type="submit"] {
+  background-color: #0094f6;
+  color: #fff;
+  border: none;
+  border-radius: 4px; /*quebra o canto da borda*/
+  padding: 10px 8px; /*mesmo padrão do input para deixar o texto longe das bordas*/
+  font-weight: bold;
+  cursor: pointer; /*Aparece o mouse ao passar por cima*/
+  opacity: 0.8; /*Trabalha com efeito de transparencia com o mouse por cima*/
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  margin-top: 1em; /*Afasta dos demais inputs do formulário*/
+}
+
+/*Quando o input não está operante*/
+input:disabled {
+  cursor: not-allowed; /*Simbolo de bloqueado quando o formulário está carregando*/
+  background-color: #000; /*Cor de fundo destaque quando esta sendo enviado*/
+}
+
+/*configuração do hover para ACENDER o botão CADASTRAR*/
+button:hover,
+input[type="submit"]:hover {
+  opacity: 1; 
+}
+
+.cancel-btn {
+  background-color: #ccc;
+}
+
+.hide {
+  display: none;
+}
