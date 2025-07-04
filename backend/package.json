@@ -1,11 +1,14 @@
 {
+  "homepage": "01_Fullsatck_React_JS",
   "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon ./app.jsx"
+    "server": "nodemon ./app.jsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
